@@ -1,0 +1,774 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"74 C:\Users\samue\Downloads\PIC\pic-conveyor.X\pic-conveyor.c
+[e E3437 . `uc
+ST_POR 0
+ST_START 1
+ST_ASK 2
+ST_COUNT 3
+ST_BACK 4
+]
+"75
+[e E3452 . `uc
+COLOR_MAGENTA 2
+COLOR_AZUL 3
+COLOR_CYAN 1
+COLOR_VERDE 5
+COLOR_AMARILLO 4
+COLOR_BLANCO 0
+COLOR_ROJO 6
+COLOR_OFF 7
+]
+"76
+[e E3444 . `uc
+PWM_ZERO 1
+PWM_20 50
+PWM_40 100
+PWM_60 150
+PWM_80 200
+PWM_100 250
+]
+"59 C:\Users\samue\Downloads\PIC\pic-conveyor.X/LibLCDXC8.h
+[v _ConfiguraLCD ConfiguraLCD `(v  1 e 1 0 ]
+"63
+[v _EnviaDato EnviaDato `(v  1 e 1 0 ]
+[v i2_EnviaDato EnviaDato `(v  1 e 1 0 ]
+"75
+[v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
+"109
+[v _HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
+[v i2_HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
+"116
+[v _BorraLCD BorraLCD `(v  1 e 1 0 ]
+"123
+[v _CursorAInicio CursorAInicio `(v  1 e 1 0 ]
+"127
+[v _ComandoLCD ComandoLCD `(v  1 e 1 0 ]
+"140
+[v _EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
+[v i2_EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
+"149
+[v _EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
+[v i2_EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
+"236
+[v _MensajeLCD_Var MensajeLCD_Var `(v  1 e 1 0 ]
+"247
+[v _DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
+[v i2_DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
+"287
+[v _RetardoLCD RetardoLCD `(v  1 e 1 0 ]
+[v i2_RetardoLCD RetardoLCD `(v  1 e 1 0 ]
+"314
+[v _OcultarCursorLCD OcultarCursorLCD `(v  1 e 1 0 ]
+"320
+[v _MostrarCursorLCD MostrarCursorLCD `(v  1 e 1 0 ]
+"328
+[v _CrearCaracter CrearCaracter `(v  1 e 1 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+[v i2___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+[v i2___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"180 C:\Users\samue\Downloads\PIC\pic-conveyor.X\pic-conveyor.c
+[v _main main `(v  1 e 1 0 ]
+"395
+[v _initPorts initPorts `(v  1 e 1 0 ]
+"445
+[v _initInterrupts initInterrupts `(v  1 e 1 0 ]
+"463
+[v _initLCD initLCD `(v  1 e 1 0 ]
+"469
+[v _colorRGB colorRGB `(v  1 e 1 0 ]
+[v i2_colorRGB colorRGB `(v  1 e 1 0 ]
+"473
+[v _bienvenida bienvenida `(v  1 e 1 0 ]
+"526
+[v _mostrarNumeros mostrarNumeros `(v  1 e 1 0 ]
+[v i2_mostrarNumeros mostrarNumeros `(v  1 e 1 0 ]
+"537
+[v _valuePWM valuePWM `(v  1 e 1 0 ]
+[v i2_valuePWM valuePWM `(v  1 e 1 0 ]
+"550
+[v _emergencia emergencia `(v  1 e 1 0 ]
+"566
+[v _LeerYtransmitir LeerYtransmitir `(v  1 e 1 0 ]
+"604
+[v _EnviarCadena EnviarCadena `(v  1 e 1 0 ]
+"611
+[v _Transmitir Transmitir `(v  1 e 1 0 ]
+"616
+[v _conversion conversion `(uc  1 e 1 0 ]
+"624
+[v _ProcesarOrden ProcesarOrden `(v  1 e 1 0 ]
+"726
+[v _MedirDistancia MedirDistancia `(uc  1 e 1 0 ]
+"761
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+"957
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+"972
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+"35 C:\Users\samue\Downloads\PIC\pic-conveyor.X/LibLCDXC8.h
+[v _interfaz interfaz `uc  1 e 1 0 ]
+"2451 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\pic\include\proc/pic18f4550.h
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"2971
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"3071
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3183
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"3261
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3373
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"3425
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"3623
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"3845
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"3999
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4221
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S190 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"4868
+[s S199 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S202 . 1 `S190 1 . 1 0 `S199 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES202  1 e 1 @4006 ]
+"4913
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"4920
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"4927
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+"4934
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+"5144
+[v _TXSTA TXSTA `VEuc  1 e 1 @4012 ]
+"5400
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5412
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5424
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"6060
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @4024 ]
+"6240
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @4026 ]
+"6304
+[v _CCPR2 CCPR2 `VEus  1 e 2 @4027 ]
+"6325
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+"6494
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4030 ]
+"6508
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"6579
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"6664
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+"6797
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"7198
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+"7296
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"7406
+[v _TMR2 TMR2 `VEuc  1 e 1 @4044 ]
+"7413
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+"7516
+[v _TMR1 TMR1 `VEus  1 e 2 @4046 ]
+"8067
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"8137
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+[s S218 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8612
+[s S227 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S236 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S240 . 1 `S218 1 . 1 0 `S227 1 . 1 0 `S236 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES240  1 e 1 @4082 ]
+"9280
+[v _CCP2IE CCP2IE `VEb  1 e 0 @32000 ]
+"9283
+[v _CCP2IF CCP2IF `VEb  1 e 0 @32008 ]
+"9931
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"9943
+[v _GO GO `VEb  1 e 0 @32273 ]
+"10120
+[v _LATA1 LATA1 `VEb  1 e 0 @31817 ]
+"10123
+[v _LATA2 LATA2 `VEb  1 e 0 @31818 ]
+"10126
+[v _LATA3 LATA3 `VEb  1 e 0 @31819 ]
+"10129
+[v _LATA4 LATA4 `VEb  1 e 0 @31820 ]
+"10132
+[v _LATA5 LATA5 `VEb  1 e 0 @31821 ]
+"10459
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"10486
+[v _POR POR `VEb  1 e 0 @32385 ]
+"10561
+[v _RB4 RB4 `VEb  1 e 0 @31756 ]
+"10564
+[v _RB5 RB5 `VEb  1 e 0 @31757 ]
+"10567
+[v _RB6 RB6 `VEb  1 e 0 @31758 ]
+"10570
+[v _RB7 RB7 `VEb  1 e 0 @31759 ]
+"10573
+[v _RBIE RBIE `VEb  1 e 0 @32659 ]
+"10576
+[v _RBIF RBIF `VEb  1 e 0 @32656 ]
+"10582
+[v _RBPU RBPU `VEb  1 e 0 @32655 ]
+"10585
+[v _RC0 RC0 `VEb  1 e 0 @31760 ]
+"10588
+[v _RC1 RC1 `VEb  1 e 0 @31761 ]
+"10630
+[v _RCIE RCIE `VEb  1 e 0 @31981 ]
+"10633
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"10702
+[v _RI RI `VEb  1 e 0 @32388 ]
+"11002
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"11005
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"11011
+[v _TMR0ON TMR0ON `VEb  1 e 0 @32431 ]
+"11020
+[v _TMR1IF TMR1IF `VEb  1 e 0 @31984 ]
+"11026
+[v _TMR1ON TMR1ON `VEb  1 e 0 @32360 ]
+"11038
+[v _TMR2ON TMR2ON `VEb  1 e 0 @32338 ]
+"11164
+[v _TRMT TRMT `VEb  1 e 0 @32097 ]
+"74 C:\Users\samue\Downloads\PIC\pic-conveyor.X\pic-conveyor.c
+[v _estado estado `E3437  1 e 1 0 ]
+"75
+[v _rgb_color rgb_color `E3452  1 e 1 0 ]
+"76
+[v _PWM_Duty PWM_Duty `E3444  1 e 1 0 ]
+"79
+[v _tecla tecla `VEuc  1 e 1 0 ]
+[v _input input `VEuc  1 e 1 0 ]
+"80
+[v _block block `VEa  1 e 1 0 ]
+[v _ok ok `VEa  1 e 1 0 ]
+[v _ask ask `VEa  1 e 1 0 ]
+[v _rst rst `VEa  1 e 1 0 ]
+"83
+[v _objective objective `VEuc  1 e 1 0 ]
+[v _missing missing `VEuc  1 e 1 0 ]
+[v _count count `VEuc  1 e 1 0 ]
+[v _counter counter `VEuc  1 e 1 0 ]
+[v _last last `VEuc  1 e 1 0 ]
+[v _curr curr `VEuc  1 e 1 0 ]
+"84
+[v _pressed pressed `VEa  1 e 1 0 ]
+[v _inactive inactive `VEa  1 e 1 0 ]
+[v _emergency emergency `VEa  1 e 1 0 ]
+"85
+[v _medioSegundo medioSegundo `VEa  1 e 1 0 ]
+"88
+[v _toCount toCount `[17]uc  1 e 17 0 ]
+"89
+[v _Done Done `[17]uc  1 e 17 0 ]
+"92
+[v _conversionadc conversionadc `VEuc  1 e 1 0 ]
+"93
+[v _lastAdc lastAdc `VEuc  1 e 1 0 ]
+"94
+[v _welcome welcome `VEa  1 e 1 0 ]
+"95
+[v _ADC_M ADC_M `C[15]uc  1 e 15 0 ]
+"96
+[v _SENSOR_M SENSOR_M `C[19]uc  1 e 19 0 ]
+"97
+[v _SENSORO_M SENSORO_M `C[17]uc  1 e 17 0 ]
+"100
+[v _comando comando `VEuc  1 e 1 0 ]
+"101
+[v _motor_on motor_on `VEa  1 e 1 0 ]
+"102
+[v _porcentajePWM porcentajePWM `VEuc  1 e 1 0 ]
+"103
+[v _PWM_Duty_por PWM_Duty_por `VEuc  1 e 1 0 ]
+"106
+[v _distancia distancia `uc  1 e 1 0 ]
+"107
+[v _d d `uc  1 e 1 0 ]
+"108
+[v _etimeout etimeout `VEuc  1 e 1 0 ]
+"109
+[v _ctimeout ctimeout `VEuc  1 e 1 0 ]
+"111
+[v _i i `uc  1 e 1 0 ]
+"112
+[v _sum sum `uc  1 e 1 0 ]
+"116
+[v _banda_izq banda_izq `C[8]uc  1 e 8 0 ]
+"127
+[v _banda_der banda_der `C[8]uc  1 e 8 0 ]
+"138
+[v _banda_centro banda_centro `C[8]uc  1 e 8 0 ]
+"173
+[v _countGuardado countGuardado `uc  1 e 1 0 ]
+"174
+[v _missingGuardado missingGuardado `uc  1 e 1 0 ]
+"175
+[v _objectiveGuardado objectiveGuardado `uc  1 e 1 0 ]
+"180
+[v _main main `(v  1 e 1 0 ]
+{
+"390
+} 0
+"526
+[v _mostrarNumeros mostrarNumeros `(v  1 e 1 0 ]
+{
+"535
+} 0
+"395
+[v _initPorts initPorts `(v  1 e 1 0 ]
+{
+"443
+} 0
+"445
+[v _initInterrupts initInterrupts `(v  1 e 1 0 ]
+{
+"461
+} 0
+"550
+[v _emergencia emergencia `(v  1 e 1 0 ]
+{
+"564
+} 0
+"537
+[v _valuePWM valuePWM `(v  1 e 1 0 ]
+{
+[v valuePWM@valorPWM valorPWM `uc  1 p 1 wreg ]
+[v valuePWM@valorPWM valorPWM `uc  1 p 1 wreg ]
+[v valuePWM@valorPWM valorPWM `uc  1 p 1 26 ]
+"548
+} 1
+"469
+[v _colorRGB colorRGB `(v  1 e 1 0 ]
+{
+"471
+} 0
+"236 C:\Users\samue\Downloads\PIC\pic-conveyor.X/LibLCDXC8.h
+[v _MensajeLCD_Var MensajeLCD_Var `(v  1 e 1 0 ]
+{
+[v MensajeLCD_Var@a a `*.35uc  1 p 2 0 ]
+"246
+} 0
+"473 C:\Users\samue\Downloads\PIC\pic-conveyor.X\pic-conveyor.c
+[v _bienvenida bienvenida `(v  1 e 1 0 ]
+{
+"479
+[v bienvenida@right right `uc  1 a 1 7 ]
+[v bienvenida@left left `uc  1 a 1 6 ]
+[v bienvenida@i i `uc  1 a 1 5 ]
+"524
+} 0
+"463
+[v _initLCD initLCD `(v  1 e 1 0 ]
+{
+"467
+} 0
+"314 C:\Users\samue\Downloads\PIC\pic-conveyor.X/LibLCDXC8.h
+[v _OcultarCursorLCD OcultarCursorLCD `(v  1 e 1 0 ]
+{
+"319
+} 0
+"75
+[v _InicializaLCD InicializaLCD `(v  1 e 1 0 ]
+{
+"108
+} 0
+"116
+[v _BorraLCD BorraLCD `(v  1 e 1 0 ]
+{
+"122
+} 0
+"59
+[v _ConfiguraLCD ConfiguraLCD `(v  1 e 1 0 ]
+{
+[v ConfiguraLCD@a a `uc  1 p 1 wreg ]
+[v ConfiguraLCD@a a `uc  1 p 1 wreg ]
+[v ConfiguraLCD@a a `uc  1 p 1 26 ]
+"62
+} 1
+"320
+[v _MostrarCursorLCD MostrarCursorLCD `(v  1 e 1 0 ]
+{
+"326
+} 0
+"140
+[v _EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
+{
+[v EscribeLCD_c@a a `uc  1 p 1 wreg ]
+[v EscribeLCD_c@a a `uc  1 p 1 wreg ]
+"144
+[v EscribeLCD_c@a a `uc  1 p 1 30 ]
+"148
+} 1
+"247
+[v _DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
+{
+[v DireccionaLCD@a a `uc  1 p 1 wreg ]
+[v DireccionaLCD@a a `uc  1 p 1 wreg ]
+"250
+[v DireccionaLCD@a a `uc  1 p 1 30 ]
+"254
+} 1
+"328
+[v _CrearCaracter CrearCaracter `(v  1 e 1 0 ]
+{
+[v CrearCaracter@pos pos `uc  1 p 1 wreg ]
+"329
+[v CrearCaracter@i i `uc  1 a 1 3 ]
+"328
+[v CrearCaracter@pos pos `uc  1 p 1 wreg ]
+[v CrearCaracter@data data `*.32Cuc  1 p 2 30 ]
+"331
+[v CrearCaracter@pos pos `uc  1 p 1 2 ]
+"349
+} 1
+"726 C:\Users\samue\Downloads\PIC\pic-conveyor.X\pic-conveyor.c
+[v _MedirDistancia MedirDistancia `(uc  1 e 1 0 ]
+{
+"756
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 1 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 0 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 26 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 28 ]
+"30
+} 0
+"149 C:\Users\samue\Downloads\PIC\pic-conveyor.X/LibLCDXC8.h
+[v _EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
+{
+[v EscribeLCD_n8@a a `uc  1 p 1 wreg ]
+"154
+[v EscribeLCD_n8@unidad unidad `uc  1 a 1 11 ]
+[v EscribeLCD_n8@decena decena `uc  1 a 1 10 ]
+[v EscribeLCD_n8@centena centena `uc  1 a 1 9 ]
+"149
+[v EscribeLCD_n8@a a `uc  1 p 1 wreg ]
+[v EscribeLCD_n8@b b `uc  1 p 1 8 ]
+"155
+[v EscribeLCD_n8@a a `uc  1 p 1 12 ]
+"186
+} 1
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 31 ]
+[v ___awmod@counter counter `uc  1 a 1 30 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 26 ]
+[v ___awmod@divisor divisor `i  1 p 2 28 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"63 C:\Users\samue\Downloads\PIC\pic-conveyor.X/LibLCDXC8.h
+[v _EnviaDato EnviaDato `(v  1 e 1 0 ]
+{
+[v EnviaDato@a a `uc  1 p 1 wreg ]
+[v EnviaDato@a a `uc  1 p 1 wreg ]
+[v EnviaDato@a a `uc  1 p 1 29 ]
+"74
+} 1
+"287
+[v _RetardoLCD RetardoLCD `(v  1 e 1 0 ]
+{
+[v RetardoLCD@a a `uc  1 p 1 wreg ]
+[v RetardoLCD@a a `uc  1 p 1 wreg ]
+[v RetardoLCD@a a `uc  1 p 1 27 ]
+"305
+} 1
+"109
+[v _HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
+{
+"115
+} 0
+"957 C:\Users\samue\Downloads\PIC\pic-conveyor.X\pic-conveyor.c
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+{
+[v EEPROM_Write@addr addr `uc  1 p 1 wreg ]
+[v EEPROM_Write@addr addr `uc  1 p 1 wreg ]
+[v EEPROM_Write@data data `uc  1 p 1 26 ]
+[v EEPROM_Write@addr addr `uc  1 p 1 27 ]
+"970
+} 1
+"972
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+{
+[v EEPROM_Read@addr addr `uc  1 p 1 wreg ]
+[v EEPROM_Read@addr addr `uc  1 p 1 wreg ]
+[v EEPROM_Read@addr addr `uc  1 p 1 26 ]
+"978
+} 1
+"761
+[v _ISR ISR `IIH(v  1 e 1 0 ]
+{
+"953
+} 0
+"526
+[v i2_mostrarNumeros mostrarNumeros `(v  1 e 1 0 ]
+{
+"535
+} 0
+"469
+[v i2_colorRGB colorRGB `(v  1 e 1 0 ]
+{
+"471
+} 0
+"149 C:\Users\samue\Downloads\PIC\pic-conveyor.X/LibLCDXC8.h
+[v i2_EscribeLCD_n8 EscribeLCD_n8 `(v  1 e 1 0 ]
+{
+[v i2EscribeLCD_n8@a a `uc  1 p 1 wreg ]
+"154
+[v i2EscribeLCD_n8@unidad unidad `uc  1 a 1 17 ]
+[v i2EscribeLCD_n8@decena decena `uc  1 a 1 16 ]
+[v i2EscribeLCD_n8@centena centena `uc  1 a 1 15 ]
+"149
+[v i2EscribeLCD_n8@a a `uc  1 p 1 wreg ]
+[v i2EscribeLCD_n8@b b `uc  1 p 1 14 ]
+"155
+[v i2EscribeLCD_n8@a a `uc  1 p 1 18 ]
+"186
+} 1
+"140
+[v i2_EscribeLCD_c EscribeLCD_c `(v  1 e 1 0 ]
+{
+[v i2EscribeLCD_c@a a `uc  1 p 1 wreg ]
+[v i2EscribeLCD_c@a a `uc  1 p 1 wreg ]
+"144
+[v i2EscribeLCD_c@a a `uc  1 p 1 4 ]
+"148
+} 1
+"247
+[v i2_DireccionaLCD DireccionaLCD `(v  1 e 1 0 ]
+{
+[v i2DireccionaLCD@a a `uc  1 p 1 wreg ]
+[v i2DireccionaLCD@a a `uc  1 p 1 wreg ]
+"250
+[v i2DireccionaLCD@a a `uc  1 p 1 4 ]
+"254
+} 1
+"63
+[v i2_EnviaDato EnviaDato `(v  1 e 1 0 ]
+{
+[v i2EnviaDato@a a `uc  1 p 1 wreg ]
+[v i2EnviaDato@a a `uc  1 p 1 wreg ]
+[v i2EnviaDato@a a `uc  1 p 1 3 ]
+"74
+} 1
+"287
+[v i2_RetardoLCD RetardoLCD `(v  1 e 1 0 ]
+{
+[v i2RetardoLCD@a a `uc  1 p 1 wreg ]
+[v i2RetardoLCD@a a `uc  1 p 1 wreg ]
+[v i2RetardoLCD@a a `uc  1 p 1 1 ]
+"305
+} 1
+"109
+[v i2_HabilitaLCD HabilitaLCD `(v  1 e 1 0 ]
+{
+"115
+} 0
+"624 C:\Users\samue\Downloads\PIC\pic-conveyor.X\pic-conveyor.c
+[v _ProcesarOrden ProcesarOrden `(v  1 e 1 0 ]
+{
+[v ProcesarOrden@orden orden `uc  1 p 1 wreg ]
+[v ProcesarOrden@orden orden `uc  1 p 1 wreg ]
+[v ProcesarOrden@orden orden `uc  1 p 1 17 ]
+"724
+} 1
+"537
+[v i2_valuePWM valuePWM `(v  1 e 1 0 ]
+{
+[v i2valuePWM@valorPWM valorPWM `uc  1 p 1 wreg ]
+[v i2valuePWM@valorPWM valorPWM `uc  1 p 1 wreg ]
+[v i2valuePWM@valorPWM valorPWM `uc  1 p 1 0 ]
+"548
+} 1
+"566
+[v _LeerYtransmitir LeerYtransmitir `(v  1 e 1 0 ]
+{
+"602
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+[v i2___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v i2___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v i2___lwdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v i2___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v i2___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+[v i2___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v i2___awmod@sign sign `uc  1 a 1 5 ]
+[v i2___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v i2___awmod@dividend dividend `i  1 p 2 0 ]
+[v i2___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v i2___awdiv@quotient quotient `i  1 a 2 12 ]
+"11
+[v i2___awdiv@sign sign `uc  1 a 1 11 ]
+[v i2___awdiv@counter counter `uc  1 a 1 10 ]
+"7
+[v i2___awdiv@dividend dividend `i  1 p 2 6 ]
+[v i2___awdiv@divisor divisor `i  1 p 2 8 ]
+"41
+} 0
+"616 C:\Users\samue\Downloads\PIC\pic-conveyor.X\pic-conveyor.c
+[v _conversion conversion `(uc  1 e 1 0 ]
+{
+"620
+} 0
+"604
+[v _EnviarCadena EnviarCadena `(v  1 e 1 0 ]
+{
+[v EnviarCadena@texto texto `*.32Cuc  1 p 2 15 ]
+"609
+} 0
+"611
+[v _Transmitir Transmitir `(v  1 e 1 0 ]
+{
+[v Transmitir@BufferT BufferT `uc  1 p 1 wreg ]
+[v Transmitir@BufferT BufferT `uc  1 p 1 wreg ]
+[v Transmitir@BufferT BufferT `uc  1 p 1 14 ]
+"614
+} 1
